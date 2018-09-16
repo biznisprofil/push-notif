@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { PushNotificationService } from 'ngx-push-notifications';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +11,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    PushNotificationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
